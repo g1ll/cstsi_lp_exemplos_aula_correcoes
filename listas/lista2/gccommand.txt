@@ -1,0 +1,6 @@
+arquivos com codificação western(windows-1252)
+usar comando para compilar
+gcc -std=c89 -finput-charset=windows-1252 -o main main.c
+
+arquivos com codificação UTF-8 usar comando
+gcc -std=c89 -finput-charset=utf-8 -o main main.c
