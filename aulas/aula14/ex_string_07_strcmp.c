@@ -9,9 +9,10 @@ int main(void){
     printf("\n\nCom OP REL\n\n");
 
     strcpy(str1,"amora");
-    strcpy(str2,"Uva");
+    strcpy(str2,"amora");
 
-    printf("\n%s < %s",str1,str2);
+    //compara endereços na memória
+    printf("\n%s[%d] < %s[%d]",str1,&str1,str2,&str2);
     if(str1<str2)
         printf(" = V");
     else
@@ -25,8 +26,9 @@ int main(void){
     printf("\n%d\n",str1[0]);
     printf("\n%d\n",str2[0]);
 
-    printf("\namora < Uva");
-    printf(("amora"<"Uva")?" = V":" = F");
+    printf("\namora < uva");
+    printf(("amora"<"uva")?" = V":" = F");
+    printf(("amora">"uva")?" = V":" = F");
         
     printf("\nuva < uvas");
     printf("uva"<"uvas"?" = V":" = F");
@@ -42,8 +44,8 @@ int main(void){
     printf("\nuva < uvas");
     printf(strcmp("uva","uvas")<0?" = V":" = F");
 
-    printf("\n'teste' > amora");
-    printf(strcmp("teste","amora")>0?" = V":" = F");
+    printf("\n' teste' > amora");
+    printf(strcmp(" teste","amora")>0?" = V":" = F");
 
     printf("\n\n");
     printf("Digite uma palavra: ");
